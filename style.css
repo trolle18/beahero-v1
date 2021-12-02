@@ -51,3 +51,20 @@ li a {
     text-transform: uppercase;
 }
 
+
+/* ---- MEDIA QUERIES ---- */
+
+/* Phone */
+@media screen and (max-width:767px) {
+    
+}
+
+/* Tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+}
+
+/* Computer */
+@media screen and (min-width:1024px) {
+    
+}
