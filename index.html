@@ -7,11 +7,14 @@
         <title>Be A Hero</title>
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
-        <nav>
-            <div class="header-box"> 
+        <div class="header-box"> 
+
+                <nav>
                     <div class="nav">
                         <ul>                
                             <li>                
@@ -20,18 +23,71 @@
                                 </div>                
                             </li>   
 
-                            <li>                
+                            <li>             
                                 <div class="navlinks">                
                                     <a href="#">Coaching</a>                
                                     <a href="#">About</a>                
                                     <a href="#">Contact</a>                
                                 </div>                
-                            </li>                
+                            </li>
                         </ul>
+
+                        <div class="dropdown">
+                           <div><button onclick="myFunction()" class="dropbtn"><i class="fa">&#xf0c9;</i></button></div>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#home">Coaching</a>
+                              <a href="#about">About</a>
+                              <a href="#contact">Contact</a>
+                            </div>
+                          </div>
+                    </div>
+                </nav>
+
+            <div class="header-text">
+                <h1>Be a Hero</h1>
+                <h2>Enabling people to live their dreams</h2>
+            </div>
+
+        </div>
+        
+        <div class="content">
+    
+            <div class="section-one">
+                <h3>Coaching</h3>
+                <p>Coaching is a journey to self-discovery and development.<br>
+                    As a Leadership Coach I will help you develop and unlock your strengtha and passions.
+                    This will lead to a more balanced and fufilling life with increased energy and happiness.<br>
+                    <a href="#" class="section-link">Read more here...</a>
+                    </p>
+            </div>
+        
+                <div class="flex-cards">
+                    <div class="card">
+                        <h3>What</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus, turpis et 
+                            pellentesque facilisis, elit turpis commodo orci, egestas aliquam sapien ligula in ante. 
+                            Fusce ullamcorper erat nec nisi fermentum finibus. Suspendisse arcu sapien, aliquam ac 
+                            luctus et, porttitor sit amet lacus.</p>
                     </div>
 
-            </div>
-        </nav>
+                    <div class="card">
+                        <h3>Why</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus, turpis et 
+                            pellentesque facilisis, elit turpis commodo orci, egestas aliquam sapien ligula in ante. 
+                            Fusce ullamcorper erat nec nisi fermentum finibus. Suspendisse arcu sapien, aliquam ac 
+                            luctus et, porttitor sit amet lacus.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>How</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus, turpis et 
+                            pellentesque facilisis, elit turpis commodo orci, egestas aliquam sapien ligula in ante. 
+                            Fusce ullamcorper erat nec nisi fermentum finibus. Suspendisse arcu sapien, aliquam ac 
+                            luctus et, porttitor sit amet lacus.</p>
+                    </div>
+                </div>
+
+        </div>
 
 
 
@@ -54,7 +110,9 @@
 
 
 
-        <script src="script.js"></script>
+
+
+
     </body>
 
 </html>

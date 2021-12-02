@@ -10,15 +10,16 @@ body {
 /* Header */
 .header-box {
     background-image: url(img/headerfoto.png);
-    min-height: 350px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border: solid yellow 0px;
 }
 
 .nav {
-    border: solid blue 2px;
+    border: solid blue 0px;
     margin: 0 auto;
 
 }
@@ -34,18 +35,17 @@ li {
 }
 
 .logo {
-    border: solid yellow 2px;
+    border: solid yellow 0px;
     position: absolute;
     top: 0%;
     left: 0%
 }
 
 .logo a {
-    border: solid green 2px;
+    border: solid green 0px;
     font-family: 'NewsGoth BT', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     color: #f8f8f8;
-    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     float: left;
@@ -54,7 +54,7 @@ li {
 }
 
 .navlinks {
-    border: solid yellow 2px;
+    border: solid yellow 0px;
     position: absolute;
     top: 0%;
     right: 0%
@@ -62,22 +62,83 @@ li {
 
 .navlinks a {
     float: right;
-    border: solid red 2px;
+    border: solid red 0px;
     font-family: 'NewsGoth BT', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     color: #f8f8f8;
-    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     margin: 6px;
 
 }
 
+.header-text {
+    position: absolute;
+    text-align: center;
+    color: #f8f8f8;
+    top: 50%;
+    width: 100%;
+    border: solid green 0px;
+}
 
+.header-text h1 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+}
 
+.header-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
 
 /* ---- HOMEPAGE ---- */
 
+.content {
+    margin: 0px 50px;
+}
+
+.section-one {
+    margin: 0px;
+}
+
+.section-one h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+}
+
+.section-link {
+    text-decoration: none;
+    color: #2f1f5d;
+    font-style: italic;
+    font-size: 12px;
+    margin: 20px;
+    border: solid green 0px;
+}
+
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    background-color: #c8c7ff;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+.card h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    text-align: center;
+}
 
 
 
@@ -105,6 +166,51 @@ li {
 @media screen and (max-width:767px) {
     /* Homepage*/
 
+        /* Nav */
+        .navlinks {
+            display: none;
+        }
+        /* Mobile menu */
+       .dropbtn {
+        color: #f8f8f8;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+          background-color: transparent;
+      }
+      
+      .dropdown {
+        float: right;
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f8f8f8;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: #323232;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .show {
+          display: block;
+        }
+
+
+
 
     /* Coaching */
 
@@ -121,7 +227,48 @@ li {
 /* TABLET*/
 @media screen and (min-width:768px) and (max-width:1023px) {
     /* Homepage*/
-
+        /* Nav */
+        .navlinks {
+            display: none;
+        }
+        /* Mobile menu */
+       .dropbtn {
+        color: #f8f8f8;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+          background-color: transparent;
+      }
+      
+      .dropdown {
+        float: right;
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f8f8f8;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: #323232;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .show {
+          display: block;
+        }
 
     /* Coaching */
 
@@ -136,6 +283,11 @@ li {
 /* COMPUTER */
 @media screen and (min-width:1024px) {
     /* Homepage*/
+        /* Nav */
+        .dropdown {
+            display: none;
+        }
+
 
 
     /* Coaching */
