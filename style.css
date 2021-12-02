@@ -2,60 +2,83 @@ body {
     background-color: #f8f8f8;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #323232;
     margin: 0;
 }
 
 /* ---- NAV ----  */
 
-nav {
-    margin: auto;
-    max-width: 100%;
+/* Header */
+.header-box {
+    background-image: url(img/headerfoto.png);
+    min-height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav {
+    border: solid blue 2px;
+    margin: 0 auto;
+
 }
 
 ul {
     list-style-type: none;
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
 }
 
 li {
-    float: left;
     display: inline;
 }
 
-li a {
-    text-decoration: none;
-    border: solid red 0px;
-    color: #323232;
-    text-transform: uppercase;
+.logo {
+    border: solid yellow 2px;
+    position: absolute;
+    top: 0%;
+    left: 0%
 }
 
-.logo {
+.logo a {
+    border: solid green 2px;
     font-family: 'NewsGoth BT', sans-serif;
     font-size: 26px;
+    color: #f8f8f8;
     font-weight: bold;
-    color: #323232;
     text-transform: uppercase;
+    text-decoration: none;
+    float: left;
+    margin: 6px;
+    padding: 0;
 }
+
+.navlinks {
+    border: solid yellow 2px;
+    position: absolute;
+    top: 0%;
+    right: 0%
+}
+
+.navlinks a {
+    float: right;
+    border: solid red 2px;
+    font-family: 'NewsGoth BT', sans-serif;
+    font-size: 26px;
+    color: #f8f8f8;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 6px;
+
+}
+
+
 
 
 /* ---- HOMEPAGE ---- */
 
-/* Header */
 
-.headerbox {
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.headerphoto {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
 
 
 /* ---- COACHING ---- */
