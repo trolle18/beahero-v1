@@ -74,19 +74,52 @@ li a {
 
 
 
+
+
 /* ---- MEDIA QUERIES ---- */
 
-/* Phone */
+/* PHONE */
 @media screen and (max-width:767px) {
-    
+    /* Homepage*/
+
+
+    /* Coaching */
+
+
+    /* About */
+
+
+    /* Contact */
+
+
 }
 
-/* Tablet*/
+
+/* TABLET*/
 @media screen and (min-width:768px) and (max-width:1023px) {
+    /* Homepage*/
+
+
+    /* Coaching */
+
     
+    /* About */
+
+
+    /* Contact */
 }
 
-/* Computer */
+
+/* COMPUTER */
 @media screen and (min-width:1024px) {
+    /* Homepage*/
+
+
+    /* Coaching */
+
     
+    /* About */
+
+
+    /* Contact */
 }
