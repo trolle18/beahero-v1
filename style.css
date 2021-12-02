@@ -6,19 +6,7 @@ body {
     margin: 0;
 }
 
-/* ---- NAV & HEADER ---- */
-.headerbox {
-    margin: auto;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.headerphoto {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
+/* ---- NAV ----  */
 
 nav {
     margin: auto;
@@ -50,6 +38,40 @@ li a {
     color: #323232;
     text-transform: uppercase;
 }
+
+
+/* ---- HOMEPAGE ---- */
+
+/* Header */
+
+.headerbox {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.headerphoto {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* ---- COACHING ---- */
+
+
+
+/* ---- ABOUT ---- */
+
+
+
+/* ---- CONTACT ---- */
+
+
+
+/* ---- FOOTER ---- */
+
 
 
 /* ---- MEDIA QUERIES ---- */
