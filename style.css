@@ -159,6 +159,7 @@ li {
 .ill-container {
     margin: 50px 0px;
     text-align: center;
+    display: block;
 }
 
 .ill-container a {
@@ -168,6 +169,93 @@ li {
     font-size: 8px;
 }
 
+/* Testemonials */
+.testemonials-container {
+    margin-top: 100px;
+    display: block;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testemonials {
+    position: relative;
+    background: #c8c7ff;
+}
+
+.slides-container {
+    background: #c8c7ff;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+.slide q {
+    font-style: italic;
+}
+
+.author {
+    color: #2f1f5d;
+    font-family: 'NewsGoth BT', sans-serif;
+    font-size: 12px;
+}
+
+  
+  /* Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #2f1f5d;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: background-color 0.6s ease;
+}
+  
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: #887ee387;
+    color: #c8c7ff;
+}
+  
+  /* Dots */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #c8c7ff;
+    border: solid #887ee3 1px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #887ee3;
+}
+  
 
 
 
