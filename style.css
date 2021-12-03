@@ -97,13 +97,26 @@ li {
 
 .content {
     margin: 0px 50px;
+    border: solid blue 0px;
+
 }
 
-.section-one {
+.section-container {
+    border: solid green 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.section-text {
+    padding: 5px;
     margin: 0px;
+    width: 650px;  
+    border: solid violet 0px;
 }
 
-.section-one h3 {
+.section-text h3 {
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -119,17 +132,20 @@ li {
     border: solid green 0px;
 }
 
-.flex-cards {
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
+    border: solid red 0px;
+
 }
 
 .card {
     background-color: #c8c7ff;
     padding: 5px;
-    margin: 5px;
-    width: 200px;
+    margin: 10px;
+    width: 200px;  
+    border: solid violet 0px;
 }
 
 .card h3 {
@@ -139,6 +155,19 @@ li {
     font-size: 18px; 
     text-align: center;
 }
+
+.ill-container {
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.ill-container a {
+    text-decoration: none;
+    color: #c8c7ff;
+    font-style: italic;
+    font-size: 8px;
+}
+
 
 
 
@@ -166,50 +195,55 @@ li {
 @media screen and (max-width:767px) {
     /* Homepage*/
 
-        /* Nav */
+      /* Nav */
         .navlinks {
-            display: none;
+         display: none;
         }
-        /* Mobile menu */
+
+      /* Mobile menu */
        .dropbtn {
-        color: #f8f8f8;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      }
+         color: #f8f8f8;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+       }
       
       .dropbtn:hover, .dropbtn:focus {
           background-color: transparent;
-      }
+       }
       
       .dropdown {
-        float: right;
-        position: relative;
-      }
+         float: right;
+         position: relative;
+       }
       
       .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f8f8f8;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
+         display: none;
+         position: absolute;
+         background-color: #f8f8f8;
+         min-width: 160px;
+         overflow: auto;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+       }
       
+    
       .dropdown-content a {
-        color: #323232;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+         color: #323232;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+       }
       
       .show {
-          display: block;
-        }
+         display: block;
+       }
 
-
+       .ill-container img {
+        max-width: 100%;
+        height: auto;
+    }
 
 
     /* Coaching */
@@ -259,16 +293,22 @@ li {
         z-index: 1;
       }
       
-      .dropdown-content a {
-        color: #323232;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+       .dropdown-content a {
+           color: #323232;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+        }
       
-      .show {
+        .show {
           display: block;
         }
+
+        .ill-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
 
     /* Coaching */
 
@@ -288,6 +328,14 @@ li {
             display: none;
         }
 
+        /* Content */
+
+        .ill-container img {
+            display: block;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
 
     /* Coaching */
