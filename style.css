@@ -53,6 +53,12 @@ body {
     text-decoration: none;
     float: left;
     margin-right: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.logo a:hover {
+    color: #c8c7ff;
+
 }
 
 .nav-links {
@@ -73,7 +79,11 @@ body {
     text-decoration: none;
     margin-left: 20px;
     padding: 0px;
+    transition: 0.5s ease-in-out;
+}
 
+.nav-links a:hover {
+    color: #c8c7ff;
 }
 
 .header-text {
@@ -298,7 +308,6 @@ body {
 }
 
 .footer-logo {
-    color: #f8f8f8;
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -309,6 +318,15 @@ body {
     margin: 0px 0px;
 }
 
+.footer-logo a {
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-logo a:hover {
+    color: #c8c7ff;
+}
 
 .footer-links {
     width: 200px;  
