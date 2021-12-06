@@ -199,7 +199,6 @@ li {
         margin-bottom: 0px;
         top: 0%;
     }
-  
 
        .foto {
         max-width: 100%;
@@ -314,7 +313,7 @@ margin: 100px;
     
     .foto {
         max-width: 100%;
-        height: auto;
+        height: 50%;
     }
 
 .page_footer {
