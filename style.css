@@ -334,10 +334,17 @@ body {
     padding: 12px;
     border: 1px solid #887ee3;
     background-color: #c8c7ff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #2f1f5d;
     box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 20px;
     resize: vertical;
+}
+
+.form-input input, ::placeholder {
+    color: #2f1f5d;
 }
   
 button[type=submit] {
@@ -378,7 +385,7 @@ button[type=submit]:hover {
 .footer-container {
     width: 100%;
     background-color: #2f1f5d;
-    padding: 50px 20px;
+    padding: 50px 0px;
 }
 
 .footer-content {
