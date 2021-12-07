@@ -1,29 +1,28 @@
-/* ---- HOMEPAGE ---- */
-/* Nav */
-/* Burger menu */
+/* ---- NAV ---- */
+  /* Mobile menu */
 
-/* When clicked, hide/show dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+  /* When clicked, hide/show dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
   
-  // Close  dropdown if clicked outside
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+    /* Close  dropdown if clicked outside */
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
         }
       }
     }
-  }
 
   /* Testemonials slideshow */
     var slideIndex = 1;
-  showSlides(slideIndex);
+    showSlides(slideIndex);
 
   function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -48,3 +47,7 @@ function myFunction() {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+
+
+
+/*---- CONTACT ----*/

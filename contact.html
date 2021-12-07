@@ -63,8 +63,8 @@
         <div class="section-container">
             <div class="section-text">
                 <h3>Contact</h3>
-                <p>Aenean tempor eros ut nibh aliquet, sed vehicula neque interdum. 
-                    Pellentesque tincidunt, augue nec vehicula varius, id hendrerit erat metus sed nibh.
+                <p>
+                    Get in contact with me
                 </p>
             </div>
         </div>
@@ -73,32 +73,39 @@
             <div class="section-text">
                 
                 <div class="form-container">
-                    <form action="/action_page.php">
+                    <form action="https://formsubmit.co/trolleomar@outlook.dk" method="POST">
+                        <input type="hidden" name="_subject" value="New message | Be a hero">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html"> 
+                        <input type="hidden" name="_autoresponse" value="Be a hero | Message sent!">
+
+
                         <div class="form-input">
-                            <label for="fname" class="label"> Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="John Smith">
+                            <label for="name" class="label"> Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
                         </div>
 
-                        <div class="input-sec">
-                        <div class="form-email">
+                        
+                        <div class="form-input">
                             <label for="email" class="label">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
 
-                        <div class="form-tel">
-                            <label for="phone" class="label">Tel.</label>
-                            <input type="tel" id="phone" name="phone" placeholder="(+12) 34567890">
+                        <div class="form-input">
+                            <label for="tel" class="label">Tel.</label>
+                            <input type="tel" id="tel" name="tel" placeholder="(+12) 3456 7890">
                         </div>
-                        </div>
+                        
   
                         <div class="form-input">
-                            <label for="subject" class="label">Message</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                            <label for="message" class="label">Message</label>
+                            <textarea id="message" name="message" placeholder="Write something.." style="height:150px" required></textarea>
                         </div>
   
-                        <input type="submit">
+                        <button type="submit" id="submit">Send</button>
                     </form>
                 </div>
+
             </div>
         </div>
 

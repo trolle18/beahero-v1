@@ -302,6 +302,7 @@ body {
 .form-container {
     background-color: #f8f8f8;
     padding: 0px;
+    border: solid goldenrod 0px;
 }
 
 .label {
@@ -318,46 +319,17 @@ body {
     border: solid blueviolet 0px;
 }
 
-.input-sec {
+.form-group {
     display: flex;
     justify-content: space-between;
 }
 
-.form-email {
-    width: 60%;
+.form-input:nth-child(2) {
+    min-width: 60%;
     border: solid blue 0px;
 }
 
-
-.form-tel {
-    width: 35%;
-    border: solid blue 0px;
-}
-
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #887ee3;
-    background-color: #c8c7ff;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    resize: vertical;
-}
-
-input[type=email] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #887ee3;
-    background-color: #c8c7ff;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    resize: vertical;
-}
-
-input[type=tel] {
+.form-input input, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #887ee3;
@@ -368,21 +340,36 @@ input[type=tel] {
     resize: vertical;
 }
   
-input[type=submit] {
+button[type=submit] {
     background-color: #2f1f5d;
     color: white;
+    text-transform: uppercase;
     padding: 12px 20px;
+    margin: 10px 0px;
     border: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
   
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #c8c7ff;
     color: #2f1f5d;
     text-transform: uppercase;
+    box-shadow: 0px 0px 20px #00000020;
 }
 
-  
+.mail-img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
 
 
 
@@ -391,7 +378,7 @@ input[type=submit]:hover {
 .footer-container {
     width: 100%;
     background-color: #2f1f5d;
-    padding-top: 50px;
+    padding: 50px 20px;
 }
 
 .footer-content {
@@ -514,6 +501,10 @@ input[type=submit]:hover {
             display: none;
         }
 
+        .logo {
+            padding: 20px;
+        }
+
     /* Mobile menu */
         .dropbtn {
             color: #f8f8f8;
@@ -579,10 +570,18 @@ input[type=submit]:hover {
 
 
     /* Contact */
-
-
+    .mail-img {
+        max-width: 200px;
+    }
 
     /* Footer */
+
+    .footer-container {
+        width: 100%;
+        background-color: #2f1f5d;
+        padding: 50px 0px;
+    }
+
 
     .footer-logo {
         text-align: center;
@@ -591,8 +590,22 @@ input[type=submit]:hover {
     .footer-links {
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
+    .footer-links li {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .some-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        width: 50%;
+    }
 
 }
 
@@ -604,6 +617,11 @@ input[type=submit]:hover {
         .nav-links {
             display: none;
         }
+
+        .logo {
+            padding: 20px;
+        }
+
 
     /* Mobile menu */
         .dropbtn {
@@ -666,6 +684,17 @@ input[type=submit]:hover {
 
 
     /* Contact */
+
+    /* Footer */
+    .footer-container {
+        width: 100%;
+        background-color: #2f1f5d;
+        padding: 50px 0px;
+    }
+    
+    .footer-content {
+        margin: 20px;
+    }
 }
 
 
