@@ -343,7 +343,7 @@ body {
 }*/
 
 .benthe-div {
-  width: 767px;
+  max-width: 767px;
   padding: 20px;
   overflow: hidden;
   margin-left: auto;
@@ -351,7 +351,7 @@ body {
   background-color: #c8c7ff;
 }
 
-.benthe-div img {
+.benthe-img {
   margin-right: 50px;
   height: 250px;
   float: left;
@@ -363,7 +363,7 @@ body {
 }
 
 .section2 {
-  width: 767px;
+  max-width: 767px;
   padding: 20px;
   overflow: hidden;
   margin-left: auto;
@@ -371,19 +371,19 @@ body {
   background-color: #c8c7ff;
 }
 
-.section2 img {
+.handshake {
   margin-left: 50px;
   height: 250px;
   float: right;
 }
 
 .text2 p {
-  margin-right: 500px;
+  margin-right: 20px;
   display: block;
 }
 
 .section3 {
-  width: 767px;
+  max-width: 767px;
   padding: 20px;
   overflow: hidden;
   margin-left: auto;
@@ -391,7 +391,7 @@ body {
   background-color: #c8c7ff;
 }
 
-.section3 img {
+.flowers {
   margin-right: 50px;
   height: 250px;
   float: left;
@@ -412,10 +412,17 @@ body {
 }
 
 .athens-text {
+  text-align: center;
+  font-style: italic;
+}
+
+.offers .text2 .section2 {
+  justify-content: center;
   align-items: center;
 }
 
 /*   kort  */
+
 /* Float four columns side by side */
 .column {
   /*float: left;
@@ -637,6 +644,12 @@ body {
     height: auto;
   }
 
+  .media-img {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+
   /* About */
 
   /* Contact */
@@ -738,6 +751,22 @@ body {
   }
 
   /* Coaching */
+
+  .coaching-body {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .media-img {
+    float: none;
+    margin: auto;
+    display: block;
+  }
 
   /* About */
 
