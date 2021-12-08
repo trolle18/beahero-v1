@@ -18,6 +18,7 @@ body {
     border: solid yellow 0px;
 }
 
+<<<<<<< HEAD
 /*
 .slim-nav {
     width: 100%;
@@ -33,6 +34,12 @@ body {
     max-width: 900px;
     position: relative;
     height: 60px;
+=======
+.nav {
+    border: solid blue 0px;
+    margin: 0 auto;
+
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 }
 
 .nav ul {
@@ -41,7 +48,11 @@ body {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .nav li {
+=======
+li {
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
     display: inline;
 }
 
@@ -49,19 +60,27 @@ body {
     border: solid yellow 0px;
     position: absolute;
     top: 0%;
+<<<<<<< HEAD
     left: 0%;
     padding: 20px 0px;
+=======
+    left: 0%
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 }
 
 .logo a {
     border: solid green 0px;
     font-family: 'NewsGoth BT', sans-serif;
     font-size: 20px;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
     color: #f8f8f8;
     text-transform: uppercase;
     text-decoration: none;
     float: left;
+<<<<<<< HEAD
     margin-right: 0px;
     transition: 0.5s ease-in-out;
 }
@@ -81,12 +100,28 @@ body {
 
 .nav-links a {
     float: inline-end;
+=======
+    margin: 6px;
+    padding: 0;
+}
+
+.navlinks {
+    border: solid yellow 0px;
+    position: absolute;
+    top: 0%;
+    right: 0%
+}
+
+.navlinks a {
+    float: right;
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
     border: solid red 0px;
     font-family: 'NewsGoth BT', sans-serif;
     font-size: 20px;
     color: #f8f8f8;
     text-transform: uppercase;
     text-decoration: none;
+<<<<<<< HEAD
     margin-left: 20px;
     padding: 0px;
     transition: 0.5s ease-in-out;
@@ -96,6 +131,12 @@ body {
     color: #c8c7ff;
 }
 
+=======
+    margin: 6px;
+
+}
+
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 .header-text {
     position: absolute;
     text-align: center;
@@ -121,6 +162,7 @@ body {
 
 .content {
     margin: 0px 50px;
+<<<<<<< HEAD
     border: solid blue 0px;
 }
 
@@ -402,10 +444,49 @@ button[type=submit]:hover {
 }
 
 .footer-logo {
+=======
+}
+
+.section-one {
+    margin: 0px;
+}
+
+.section-one h3 {
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
+}
+
+.section-link {
+    text-decoration: none;
+    color: #2f1f5d;
+    font-style: italic;
+    font-size: 12px;
+    margin: 20px;
+    border: solid green 0px;
+}
+
+.flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    background-color: #c8c7ff;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+.card h3 {
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+<<<<<<< HEAD
     border: solid blue 0px;
     display: block;
     width: 100%;
@@ -495,6 +576,26 @@ button[type=submit]:hover {
 
 
 
+=======
+    text-align: center;
+}
+
+
+
+/* ---- COACHING ---- */
+
+
+
+/* ---- ABOUT ---- */
+
+
+
+/* ---- CONTACT ---- */
+
+
+
+/* ---- FOOTER ---- */
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 
 
 
@@ -502,6 +603,7 @@ button[type=submit]:hover {
 
 /* ---- MEDIA QUERIES ---- */
 
+<<<<<<< HEAD
 /* -- PHONE -- */
 @media screen and (max-width:767px) {
     
@@ -568,11 +670,62 @@ button[type=submit]:hover {
             max-width: 100%;
             height: auto;
         }
+=======
+/* PHONE */
+@media screen and (max-width:767px) {
+    /* Homepage*/
+
+        /* Nav */
+        .navlinks {
+            display: none;
+        }
+        /* Mobile menu */
+       .dropbtn {
+        color: #f8f8f8;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+          background-color: transparent;
+      }
+      
+      .dropdown {
+        float: right;
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f8f8f8;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: #323232;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .show {
+          display: block;
+        }
+
+
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 
 
     /* Coaching */
 
 
+<<<<<<< HEAD
 
     /* About */
 
@@ -629,10 +782,18 @@ button[type=submit]:hover {
         padding: 0px;
         width: 50%;
     }
+=======
+    /* About */
+
+
+    /* Contact */
+
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 
 }
 
 
+<<<<<<< HEAD
 /* -- TABLET -- */
 @media screen and (min-width:768px) and (max-width:1023px) {
     
@@ -700,6 +861,54 @@ button[type=submit]:hover {
         }
         
 
+=======
+/* TABLET*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* Homepage*/
+        /* Nav */
+        .navlinks {
+            display: none;
+        }
+        /* Mobile menu */
+       .dropbtn {
+        color: #f8f8f8;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+          background-color: transparent;
+      }
+      
+      .dropdown {
+        float: right;
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f8f8f8;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: #323232;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .show {
+          display: block;
+        }
+
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
     /* Coaching */
 
     
@@ -707,6 +916,7 @@ button[type=submit]:hover {
 
 
     /* Contact */
+<<<<<<< HEAD
     .shape-bg {
         position: absolute;
         z-index: -1;
@@ -739,10 +949,20 @@ button[type=submit]:hover {
 @media screen and (min-width:1024px) {
     
     /* Nav */
+=======
+}
+
+
+/* COMPUTER */
+@media screen and (min-width:1024px) {
+    /* Homepage*/
+        /* Nav */
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
         .dropdown {
             display: none;
         }
 
+<<<<<<< HEAD
     /* Homepage*/
         .ill-container img {
             display: block;
@@ -750,6 +970,8 @@ button[type=submit]:hover {
             margin-left: auto;
             margin-right: auto;
         }
+=======
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 
 
     /* Coaching */
@@ -759,6 +981,7 @@ button[type=submit]:hover {
 
 
     /* Contact */
+<<<<<<< HEAD
     .shape-bg {
         position: absolute;
         z-index: -1;
@@ -773,4 +996,6 @@ button[type=submit]:hover {
         width: 500px;
     }
 
+=======
+>>>>>>> 5cd618f8f41dc87a1e0ec99a34d70e15296595b0
 }
