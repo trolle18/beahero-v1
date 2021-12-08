@@ -406,6 +406,34 @@ body {
 }
 
 /*   kort  */
+/* Float four columns side by side */
+.column {
+  /*float: left;
+  width: 25%;*/
+  padding: 0 10px;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  align-content: center;
+  /*max-height: 200vh;*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column2 {
+  /*float: left;
+  width: 25%;*/
+  padding: 0 10px;
+  display: flex;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  /* align-content: flex-start; */
+  align-content: center;
+  /*max-height: 200vh;*/
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 /* ---- ABOUT ---- */
 
@@ -585,6 +613,15 @@ body {
   }
 
   /* Coaching */
+  .coaching-body {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
 
   /* About */
 
