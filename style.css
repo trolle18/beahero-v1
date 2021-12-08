@@ -394,6 +394,17 @@ body {
 
 /*  billede i midten  */
 
+.benthe-athens {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.athens-text {
+  align-items: center;
+}
+
 /*   kort  */
 
 /* ---- ABOUT ---- */
