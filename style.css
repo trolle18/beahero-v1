@@ -188,7 +188,7 @@ body {
 
 .ill-container a {
     text-decoration: none;
-    color: #c8c7ff;
+    color: #887ee3;
     font-style: italic;
     font-size: 8px;
 }
@@ -297,10 +297,11 @@ body {
 .contact {
     margin: 0px 50px;
     border: solid blue 0px;
+    z-index: 1;
 }
 
 .form-container {
-    background-color: #f8f8f8;
+    background-color: transparent;
     padding: 0px;
     border: solid goldenrod 0px;
 }
@@ -364,6 +365,7 @@ button[type=submit]:hover {
     text-transform: uppercase;
     box-shadow: 0px 0px 20px #00000020;
 }
+
 
 .mail-img {
     max-width: 300px;
@@ -577,12 +579,26 @@ button[type=submit]:hover {
 
 
     /* Contact */
+    .shape-bg {
+        position: absolute;
+        z-index: -1;
+        padding-top: 160px;
+        margin-left: -120px;
+
+    }
+    
+    .shape-bg img {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(230deg);
+        width: 315px;
+    }
+
     .mail-img {
         max-width: 200px;
     }
 
     /* Footer */
-
     .footer-container {
         width: 100%;
         background-color: #2f1f5d;
@@ -691,6 +707,20 @@ button[type=submit]:hover {
 
 
     /* Contact */
+    .shape-bg {
+        position: absolute;
+        z-index: -1;
+        padding-top: 180px;
+        margin-left: -250px;
+
+    }
+    
+    .shape-bg img {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(230deg);
+        width: 500px;
+    }
 
     /* Footer */
     .footer-container {
@@ -729,4 +759,18 @@ button[type=submit]:hover {
 
 
     /* Contact */
+    .shape-bg {
+        position: absolute;
+        z-index: -1;
+        padding-top: 180px;
+        padding-left: 80px;
+    }
+    
+    .shape-bg img {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(230deg);
+        width: 500px;
+    }
+
 }
