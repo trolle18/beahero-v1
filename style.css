@@ -18,11 +18,21 @@ body {
   border: solid yellow 0px;
 }
 
+/*
+.slim-nav {
+  width: 100%;
+  height:340px ;
+  background-color: #f8f8f8;
+  border-bottom: solid green 0px;
+}
+*/
+
 .nav {
   border: solid blue 0px;
   margin: 0 auto;
   max-width: 900px;
   position: relative;
+  height: 60px;
 }
 
 .nav ul {
@@ -45,19 +55,20 @@ body {
 
 .logo a {
   border: solid green 0px;
-  font-family: "NewsGoth BT", sans-serif;
+  font-family: 'NewsGoth BT', sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #f8f8f8;
   text-transform: uppercase;
   text-decoration: none;
   float: left;
-  margin-right: 20px;
+  margin-right: 0px;
   transition: 0.5s ease-in-out;
 }
 
 .logo a:hover {
   color: #c8c7ff;
+
 }
 
 .nav-links {
@@ -65,13 +76,13 @@ body {
   position: absolute;
   top: 0%;
   right: 0%;
-  padding: 20px 0px;
+  padding: 20px 0px;    
 }
 
 .nav-links a {
   float: inline-end;
   border: solid red 0px;
-  font-family: "NewsGoth BT", sans-serif;
+  font-family: 'NewsGoth BT', sans-serif;
   font-size: 20px;
   color: #f8f8f8;
   text-transform: uppercase;
@@ -95,14 +106,14 @@ body {
 }
 
 .header-text h1 {
-  font-family: "NewsGoth BT", sans-serif;
+  font-family: 'NewsGoth BT', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 26px;
 }
 
 .header-text h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
@@ -441,10 +452,11 @@ body {
 
 /* ---- FOOTER ---- */
 
+
 .footer-container {
   width: 100%;
   background-color: #2f1f5d;
-  padding-top: 50px;
+  padding: 50px 0px;
 }
 
 .footer-content {
@@ -459,10 +471,10 @@ body {
 }
 
 .footer-logo {
-  font-family: "NewsGoth BT", sans-serif;
+  font-family: 'NewsGoth BT', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 18px; 
   border: solid blue 0px;
   display: block;
   width: 100%;
@@ -480,7 +492,7 @@ body {
 }
 
 .footer-links {
-  width: 200px;
+  width: 200px;  
   border: solid violet 0px;
   color: #f8f8f8;
   font-size: 14px;
@@ -520,7 +532,7 @@ body {
   border: solid yellow 0px;
   width: 100px;
   position: relative;
-  bottom: 10px;
+  bottom: 0px;
   right: 0px;
 }
 
@@ -533,6 +545,7 @@ body {
   display: block;
 }
 
+
 .some-icon {
   width: 50px;
   height: auto;
@@ -540,71 +553,77 @@ body {
   bottom: 30px;
   left: 5px;
   cursor: pointer;
-  filter: invert(100%) sepia(0%) saturate(62%) hue-rotate(144deg)
-    brightness(111%) contrast(95%);
+  filter: invert(100%) sepia(0%) saturate(62%) hue-rotate(144deg) brightness(111%) contrast(95%);
   transition: 0.3s ease-in-out;
 }
 
 .some-icon:hover {
-  filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg)
-    brightness(102%) contrast(103%);
+  filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
+  
 }
 
 /* ---- MEDIA QUERIES ---- */
 
 /* -- PHONE -- */
 @media screen and (max-width: 767px) {
-  /* Nav */
-  .nav-links {
-    display: none;
+
+    /* Nav */
+    .nav-links {
+      display: none;
   }
 
-  /* Mobile menu */
+  .logo {
+      padding: 20px;
+  }
+
+/* Mobile menu */
   .dropbtn {
-    color: #f8f8f8;
-    margin: 0px;
-    padding: 5px;
-    font-size: 20px;
-    border: solid blue 0px;
-    cursor: pointer;
-    background-color: transparent;
+      color: #f8f8f8;
+      margin: 0px;
+      padding: 5px;
+      font-size: 20px;
+      border: solid blue 0px;
+      cursor: pointer;
+      background-color: transparent;
   }
 
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: transparent;
-  }
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: transparent;
+      }
+
 
   .dropdown {
-    border: solid red 0px;
-    padding: 15px;
-    display: inline-block;
-    position: relative;
-    float: right;
+      border: solid red 0px;
+      padding: 15px;
+      display: inline-block;
+      position: relative;
+      float: right;
   }
 
   .dropdown-content {
-    display: none;
-    background-color: #c8c7ff40;
-    position: absolute;
-    min-width: 120px;
-    padding: 10px 0px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 0;
+      display: none;
+      background-color: #c8c7ff40;
+      position: absolute;
+      min-width: 120px;
+      padding: 10px 0px;
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 0;
   }
 
+
   .dropdown-content a {
-    color: #f8f8f8;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
+      color: #f8f8f8;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      text-transform: uppercase;
   }
 
   .show {
-    display: block;
+      display: block;
   }
+
 
   /* Homepage*/
   .ill-container img {
@@ -623,75 +642,107 @@ body {
     height: auto;
   }
 
+
   /* About */
+
 
   /* Contact */
 
+
   /* Footer */
+  .footer-container {
+    width: 100%;
+    background-color: #2f1f5d;
+    padding: 50px 0px;
+}
 
-  .footer-logo {
+
+.footer-logo {
     text-align: center;
-  }
+}
 
-  .footer-links {
+.footer-links {
     margin-left: auto;
     margin-right: auto;
-  }
+    text-align: center;
 }
+
+.footer-links li {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.some-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    width: 50%;
+}
+
+}
+
 
 /* -- TABLET -- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Nav */
-  .nav-links {
-    display: none;
+   
+    /* Nav */
+    .nav-links {
+      display: none;
   }
 
-  /* Mobile menu */
+  .logo {
+      padding: 20px;
+  }
+
+
+/* Mobile menu */
   .dropbtn {
-    color: #f8f8f8;
-    margin: 0px;
-    padding: 5px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+      color: #f8f8f8;
+      margin: 0px;
+      padding: 5px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
   }
 
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: transparent;
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: transparent;
   }
 
   .dropdown {
-    border: solid red 0px;
-    padding: 15px;
-    display: inline-block;
-    position: relative;
-    float: right;
+      border: solid red 0px;
+      padding: 15px;
+      display: inline-block;
+      position: relative;
+      float: right;
   }
 
   .dropdown-content {
-    display: none;
-    background-color: #c8c7ff40;
-    position: absolute;
-    min-width: 120px;
-    padding: 10px 0px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 0;
+      display: none;
+      background-color: #c8c7ff40;
+      position: absolute;
+      min-width: 120px;
+      padding: 10px 0px;
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 0;
   }
 
   .dropdown-content a {
-    color: #f8f8f8;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
+     color: #f8f8f8;
+     padding: 10px 15px;
+     text-decoration: none;
+     display: block;
+     text-transform: uppercase;
   }
 
   .show {
     display: block;
   }
+
 
   /* Homepage*/
   .ill-container img {
@@ -701,9 +752,23 @@ body {
 
   /* Coaching */
 
+
   /* About */
 
+
   /* Contact */
+
+
+  /* Footer */
+      .footer-container {
+        width: 100%;
+        background-color: #2f1f5d;
+        padding: 50px 0px;
+    }
+    
+    .footer-content {
+        margin: 20px;
+    }
 }
 
 /* -- COMPUTER -- */

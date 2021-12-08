@@ -4,31 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <title>Be A Hero l Coaching</title>
+    <title>Be A Hero | Coaching</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
   </head>
-  <body class="coaching-body">
-    <nav>
-      <div class="headerbox">
-        <div class="nav">
-          <ul>
-            <li>
-              <div class="logo">
-                <a href="index.html">Be A Hero</a>
+  <body>
+    
+        <!-- NAV -->
+
+        <div class="header-box"> 
+
+
+          <nav>
+              <div class="nav">
+                  <ul>                
+                      <li>                
+                          <div class="logo">                
+                              <a href="index.html">Be A Hero</a>                
+                          </div>                
+                      </li>   
+
+                      <li>             
+                          <div class="nav-links">                
+                              <a href="#coaching">Coaching</a>                
+                              <a href="#about">About</a>                
+                              <a href="contact.html">Contact</a>                
+                          </div>                
+                      </li>
+                  </ul>
+
+                  <div class="dropdown">
+                     <button onclick="myFunction()" class="dropbtn"><i class="fa">&#xf0c9;</i></button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Coaching</a>
+                        <a href="#about">About</a>
+                        <a href="contact.html">Contact</a>
+                      </div>
+                    </div>
               </div>
-            </li>
-            <li style="float: right">
-              <div class="nav-links">
-                <a href="#">Coaching</a>
-                <a href="about.html">About</a>
-                <a href="#">Contact</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+          
+          </nav>
       </div>
-    </nav>
+  </div>
+  <div class="slim-nav"></div>
 
     <div class="coaching-text">
       <h1 class="coaching-head">Coaching</h1>
@@ -113,42 +138,38 @@
     <img class="benthe-athens" src="img/benthe-athens2.jpg" alt="" />
     <p class="athens-text">Benthe at a conference in Athens.</p>
 
-    <footer class="footer-container">
+    <footer class="footer-container">            
       <div class="footer-content">
-        <div class="footer-logo">
-          <h3>Be a hero</h3>
-        </div>
-
-        <div class="footer-links">
-          <p>Benthe Elisabeth Jørgensen</p>
-          <p>Mail: <a href="mailto:benthe@beahero.dk">Benthe@beahero.dk</a></p>
-          <p>Tel: <a href="tel:+4530323090">(+45) 30 32 30 90</a></p>
-          <p>Aarhus, Denmark</p>
-        </div>
-
-        <div class="footer-links">
-          <ul>
-            <li><a href="#">Coaching</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <div class="some-container">
-            <div class="some-shape">
-              <img src="img/MP-cape.png" class="shape" />
-              <a
-                href="https://www.linkedin.com/in/benthe/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAIrTtoBMND2KwP_TqZ4aqte7CFoc3sVBkc"
-                target="_blank"
-              >
-                <img src="img/linkedin.png" class="some-icon" />
-              </a>
-            </div>
+          <div class="footer-logo">
+          <h3> <a href="#">Be a hero</a> </h3>
           </div>
-        </div>
+
+          <div class="footer-links">
+                  <p>Benthe Elisabeth Jørgensen</p>
+                  <p>Mail: <a href="mailto:benthe@beahero.dk">Benthe@beahero.dk</a> </p>
+                  <p>Tel: <a href="tel:+4530323090">(+45) 30 32 30 90</a> </p>
+                  <p>Aarhus, Denmark</p>                    
+          </div>
+
+          <div class="footer-links">
+              <ul>
+                  <li> <a href="#">Coaching</a> </li>
+                  <li> <a href="#">About</a> </li>
+                  <li> <a href="#">Contact</a> </li>
+              </ul>
+          </div>
+
+          <div class="footer-links">
+              <div class="some-container"> 
+                  <div class="some-shape">
+                      <img src="img/MP-cape.png" class="shape">
+                      <a href="https://www.linkedin.com/in/benthe/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAIrTtoBMND2KwP_TqZ4aqte7CFoc3sVBkc" target="_blank"> <img src="img/linkedin.png" class="some-icon"> </a>
+                  </div>
+              </div>
+          </div>
+
       </div>
-    </footer>
+  </footer>
 
     <script src="script.js"></script>
   </body>
