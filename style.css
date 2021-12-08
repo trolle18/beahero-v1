@@ -273,7 +273,128 @@ body {
 /* ---- COACHING ---- */
 
 .coaching-head {
+  color: #2f1f5d;
 }
+
+.coaching-text {
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  text bokse med billeder i */
+
+/*
+.section1 {
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px 20px 0 0;
+}
+
+}
+.benthe-img img {
+  height: 900px;
+  
+}
+
+.benthe-div{
+  float: left;
+  
+}
+
+.offers {
+  float: right;
+  
+}
+
+.section2 {
+  max-width: 767px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px 20px 0 0;
+}
+
+}
+.handshake {
+  padding: 15px;
+  
+}
+
+.benthe-div{
+  float: left;
+  
+}
+
+.offers {
+  float: right;
+
+  
+}*/
+
+.benthe-div {
+  width: 767px;
+  padding: 20px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c8c7ff;
+}
+
+.benthe-div img {
+  margin-right: 50px;
+  height: 250px;
+  float: left;
+}
+
+.offers p {
+  margin-left: 500px;
+  display: block;
+}
+
+.section2 {
+  width: 767px;
+  padding: 20px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c8c7ff;
+}
+
+.section2 img {
+  margin-left: 50px;
+  height: 250px;
+  float: right;
+}
+
+.text2 p {
+  margin-right: 500px;
+  display: block;
+}
+
+.section3 {
+  width: 767px;
+  padding: 20px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c8c7ff;
+}
+
+.section3 img {
+  margin-right: 50px;
+  height: 250px;
+  float: left;
+}
+
+.offers p {
+  margin-left: 500px;
+  display: block;
+}
+
+/*  billede i midten  */
+
+/*   kort  */
 
 /* ---- ABOUT ---- */
 
