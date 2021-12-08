@@ -2,52 +2,775 @@ body {
     background-color: #f8f8f8;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #323232;
     margin: 0;
 }
 
-/* ---- NAV & HEADER ---- */
-.headerbox {
-    margin: auto;
-    max-width: 100%;
-    height: auto;
+/* ---- NAV ----  */
+
+/* Header */
+.header-box {
+    background-image: url(img/headerfoto.png);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+    border: solid yellow 0px;
 }
 
-.headerphoto {
+/*
+.slim-nav {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height:340px ;
+    background-color: #f8f8f8;
+    border-bottom: solid green 0px;
+}
+*/
+
+.nav {
+    border: solid blue 0px;
+    margin: 0 auto;
+    max-width: 900px;
+    position: relative;
+    height: 60px;
 }
 
-nav {
-    margin: auto;
-    max-width: 100%;
-}
-
-ul {
+.nav ul {
     list-style-type: none;
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
 }
 
-li {
-    float: left;
+.nav li {
     display: inline;
 }
 
-li a {
-    text-decoration: none;
-    border: solid red 0px;
-    color: #323232;
-    text-transform: uppercase;
-}
-
 .logo {
+    border: solid yellow 0px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20px 0px;
+}
+
+.logo a {
+    border: solid green 0px;
     font-family: 'NewsGoth BT', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
-    color: #323232;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: left;
+    margin-right: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.logo a:hover {
+    color: #c8c7ff;
+
+}
+
+.nav-links {
+    border: solid yellow 0px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 20px 0px;    
+}
+
+.nav-links a {
+    float: inline-end;
+    border: solid red 0px;
+    font-family: 'NewsGoth BT', sans-serif;
+    font-size: 20px;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #c8c7ff;
+}
+
+.header-text {
+    position: absolute;
+    text-align: center;
+    color: #f8f8f8;
+    top: 50%;
+    width: 100%;
+    border: solid green 0px;
+}
+
+.header-text h1 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.header-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* ---- HOMEPAGE ---- */
+
+.content {
+    margin: 0px 50px;
+    border: solid blue 0px;
+}
+
+.section-container {
+    border: solid green 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.section-text {
+    padding: 10px 0px;
+    margin: 0px;
+    width: 650px;  
+    border: solid violet 0px;
+}
+
+.section-text h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+}
+
+
+.section-text a {
+    text-decoration: none;
+    color: #2f1f5d;
+    font-style: italic;
+    font-size: 12px;
+    margin: 20px;
+    border: solid green 0px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid red 0px;
+
+}
+
+.card {
+    background-color: #c8c7ff;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;  
+    border: solid violet 0px;
+}
+
+.card h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    text-align: center;
+}
+
+.ill-container {
+    margin: 50px 0px;
+    text-align: center;
+    display: block;
+}
+
+.ill-container a {
+    text-decoration: none;
+    color: #887ee3;
+    font-style: italic;
+    font-size: 8px;
+}
+
+/* Testemonials */
+.testimonials {
+    position: relative;
+    background: #c8c7ff;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    margin-bottom: 100px;
+}
+
+.testimonials h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    margin: 0px 15px;
+}
+
+.slides-container {
+    background: #c8c7ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    display: none;
+    padding: 40px;
+    text-align: center;
+}
+
+.slide q {
+    font-style: italic;
+}
+
+.author {
+    color: #2f1f5d;
+    font-family: 'NewsGoth BT', sans-serif;
+    font-size: 12px;
+}
+
+  
+  /* Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 15px;
+    color: #887ee3;
+    font-size: 20px;
+    user-select: none;
+    transition: color 0.5s ease;
+}
+  
+.next {
+    position: absolute;
+    right: 0;
+}
+  
+.prev:hover, .next:hover {
+    color: #2f1f5d;
+    font-weight: bold;
+}
+  
+  /* Dots */
+.dot-container {
+    text-align: center;
+    padding-top: -15px;
+    background: transparent;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: #887ee3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease-in-out;
+}
+  
+.active, .dot:hover {
+    background-color: #2f1f5d;
+}
+ 
+
+
+
+
+/* ---- COACHING ---- */
+
+
+
+/* ---- ABOUT ---- */
+
+
+
+/* ---- CONTACT ---- */
+.contact {
+    margin: 0px 50px;
+    border: solid blue 0px;
+    z-index: 1;
+}
+
+.form-container {
+    background-color: transparent;
+    padding: 0px;
+    border: solid goldenrod 0px;
+}
+
+.label {
+    width: 100%;
+    border: solid red 0px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'NewsGoth BT', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-input {
+    border: solid blueviolet 0px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input:nth-child(2) {
+    min-width: 60%;
+    border: solid blue 0px;
+}
+
+.form-input input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #887ee3;
+    background-color: #c8c7ff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #2f1f5d;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.form-input input, ::placeholder {
+    color: #2f1f5d;
+}
+  
+button[type=submit] {
+    background-color: #2f1f5d;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+  
+button[type=submit]:hover {
+    background-color: #c8c7ff;
+    color: #2f1f5d;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px #00000020;
+}
+
+
+.mail-img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/* ---- FOOTER ---- */
+
+.footer-container {
+    width: 100%;
+    background-color: #2f1f5d;
+    padding: 50px 0px;
+}
+
+.footer-content {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid red 0px;
+    padding: 50px 0px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    border: solid blue 0px;
+    display: block;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.footer-logo a {
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-logo a:hover {
+    color: #c8c7ff;
+}
+
+.footer-links {
+    width: 200px;  
+    border: solid violet 0px;
+    color: #f8f8f8;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 30px;
+    margin: 20px 0px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 14px 0px;
+    text-align: left;
     text-transform: uppercase;
 }
 
+.footer-links a {
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #c8c7ff;
+}
+
+.some-container {
+    padding-left: 50%;
+    padding-top: 15%;
+}
+
+.some-shape {
+    border: solid yellow 0px;
+    width: 100px;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+.shape {
+    width: 100px;
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    display: block;
+}
+
+
+.some-icon {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(62%) hue-rotate(144deg) brightness(111%) contrast(95%);
+    transition: 0.3s ease-in-out;
+}
+
+.some-icon:hover {
+    filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
+    
+}
+
+
+
+
+
+
+
+
+/* ---- MEDIA QUERIES ---- */
+
+/* -- PHONE -- */
+@media screen and (max-width:767px) {
+    
+    /* Nav */
+        .nav-links {
+            display: none;
+        }
+
+        .logo {
+            padding: 20px;
+        }
+
+    /* Mobile menu */
+        .dropbtn {
+            color: #f8f8f8;
+            margin: 0px;
+            padding: 5px;
+            font-size: 20px;
+            border: solid blue 0px;
+            cursor: pointer;
+            background-color: transparent;
+        }
+      
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: transparent;
+            }
+      
+
+        .dropdown {
+            border: solid red 0px;
+            padding: 15px;
+            display: inline-block;
+            position: relative;
+            float: right;
+        }
+      
+        .dropdown-content {
+            display: none;
+            background-color: #c8c7ff40;
+            position: absolute;
+            min-width: 120px;
+            padding: 10px 0px;
+            box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+        }
+      
+    
+        .dropdown-content a {
+            color: #f8f8f8;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+        }
+      
+        .show {
+            display: block;
+        }
+
+
+    /* Homepage*/
+        .ill-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+    /* Coaching */
+
+
+
+    /* About */
+
+
+
+    /* Contact */
+    .shape-bg {
+        position: absolute;
+        z-index: -1;
+        padding-top: 160px;
+        margin-left: -120px;
+
+    }
+    
+    .shape-bg img {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(230deg);
+        width: 315px;
+    }
+
+    .mail-img {
+        max-width: 200px;
+    }
+
+    /* Footer */
+    .footer-container {
+        width: 100%;
+        background-color: #2f1f5d;
+        padding: 50px 0px;
+    }
+
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .footer-links li {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .some-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        width: 50%;
+    }
+
+}
+
+
+/* -- TABLET -- */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+    /* Nav */
+        .nav-links {
+            display: none;
+        }
+
+        .logo {
+            padding: 20px;
+        }
+
+
+    /* Mobile menu */
+        .dropbtn {
+            color: #f8f8f8;
+            margin: 0px;
+            padding: 5px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+      
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: transparent;
+        }
+      
+        .dropdown {
+            border: solid red 0px;
+            padding: 15px;
+            display: inline-block;
+            position: relative;
+            float: right;
+        }
+      
+        .dropdown-content {
+            display: none;
+            background-color: #c8c7ff40;
+            position: absolute;
+            min-width: 120px;
+            padding: 10px 0px;
+            box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0;
+        }
+      
+        .dropdown-content a {
+           color: #f8f8f8;
+           padding: 10px 15px;
+           text-decoration: none;
+           display: block;
+           text-transform: uppercase;
+        }
+      
+        .show {
+          display: block;
+        }
+
+    
+    /* Homepage*/
+        .ill-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+
+    /* Coaching */
+
+    
+    /* About */
+
+
+    /* Contact */
+    .shape-bg {
+        position: absolute;
+        z-index: -1;
+        padding-top: 180px;
+        margin-left: -250px;
+
+    }
+    
+    .shape-bg img {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(230deg);
+        width: 500px;
+    }
+
+    /* Footer */
+    .footer-container {
+        width: 100%;
+        background-color: #2f1f5d;
+        padding: 50px 0px;
+    }
+    
+    .footer-content {
+        margin: 20px;
+    }
+}
+
+
+/* -- COMPUTER -- */
+@media screen and (min-width:1024px) {
+    
+    /* Nav */
+        .dropdown {
+            display: none;
+        }
+
+    /* Homepage*/
+        .ill-container img {
+            display: block;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    /* Coaching */
+
+    
+    /* About */
+
+
+    /* Contact */
+    .shape-bg {
+        position: absolute;
+        z-index: -1;
+        padding-top: 180px;
+        padding-left: 80px;
+    }
+    
+    .shape-bg img {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(230deg);
+        width: 500px;
+    }
+
+}
