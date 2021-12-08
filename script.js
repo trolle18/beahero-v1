@@ -8,7 +8,8 @@
   
     /* Close  dropdown if clicked outside */
     window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
+      console.log(event);
+      if (!event.target.matches('.fa')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
