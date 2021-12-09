@@ -18,8 +18,8 @@ body {
     border: solid yellow 0px;
 }
 
-.header-box.lille-box {
-    height: 100px;
+.header-box.slim-box {
+    height: 60px;
 }
 
 .nav {
@@ -84,10 +84,14 @@ body {
     text-decoration: none;
     margin-left: 20px;
     padding: 0px;
-    transition: 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
 }
 
 .nav-links a:hover {
+    color: #c8c7ff;
+}
+
+.nav-links a:active {
     color: #c8c7ff;
 }
 
