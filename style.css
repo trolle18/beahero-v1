@@ -416,41 +416,65 @@ body {
   font-style: italic;
 }
 
-.offers .text2 .section2 {
-  justify-content: center;
-  align-items: center;
-}
-
 /*   kort  */
 
-/* Float four columns side by side */
-.column {
-  /*float: left;
-  width: 25%;*/
+.coaching-column {
   padding: 0 10px;
-  display: flex;
-  /*flex-direction: column;*/
-  flex-wrap: wrap;
-  /* align-content: flex-start; */
-  align-content: center;
-  /*max-height: 200vh;*/
-  justify-content: space-around;
-  flex-wrap: wrap;
+  border: solid hotpink 0px;
 }
 
-.column2 {
-  /*float: left;
-  width: 25%;*/
-  padding: 0 10px;
-  display: flex;
-  /*flex-direction: column;*/
-  flex-wrap: wrap;
-  /* align-content: flex-start; */
-  align-content: center;
-  /*max-height: 200vh;*/
-  justify-content: space-around;
-  flex-wrap: wrap;
+/* {
+  max-width: 767px;
+  padding: 20px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c8c7ff;
 }
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid red 0px;
+}*/
+.coaching-row {
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid green 0px;
+}
+
+.coaching-card {
+  background-color: #c8c7ff;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+  justify-content: center;
+  border: solid violet 0px;
+}
+
+.card-img {
+  max-width: 100px;
+  border: solid orangered 10px;
+}
+
+.coaching-card h4 {
+  font-family: "NewsGoth BT", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  border: solid orange 0px;
+}
+
+/*.ill-container {
+  margin: 50px 0px;
+  text-align: center;
+  display: block;
+  border: solid green 10px;
+}*/
 
 /* ---- ABOUT ---- */
 
