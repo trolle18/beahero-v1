@@ -12,6 +12,7 @@ body {
     background-image: url(img/headerfoto.png);
     height: 400px;
     background-position: top center;
+
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -20,7 +21,7 @@ body {
 
 .header-box.slim-box {
     height: 60px;
-}
+
 
 .nav {
     border: solid blue 0px;
@@ -84,7 +85,8 @@ body {
     text-decoration: none;
     margin-left: 20px;
     padding: 0px;
-    transition: color 0.5s ease-in-out;
+
+    transition: 0.5s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -94,6 +96,7 @@ body {
 .nav-links a:active {
     color: #c8c7ff;
 }
+
 
 .header-text {
     position: absolute;
@@ -318,6 +321,7 @@ body {
 .form-input {
     border: solid blueviolet 0px;
 }
+
 
 .form-group {
     display: flex;
