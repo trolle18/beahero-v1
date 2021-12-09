@@ -445,19 +445,40 @@ body {
   justify-content: center;
   border: solid green 0px;
 }
+.card-text {
+  justify-content: center;
+  margin: 5px;
+  border: solid indigo 0px;
+}
+
+.card-text2 {
+  justify-content: center;
+  margin: 5px;
+  margin-bottom: 15px;
+  border: solid indigo 0px;
+}
 
 .coaching-card {
   background-color: #c8c7ff;
   padding: 10px;
   margin: 10px;
   max-width: 200px;
+  height: 300px;
   justify-content: center;
   border: solid violet 0px;
 }
 
 .card-img {
-  max-width: 100px;
-  border: solid orangered 10px;
+  /*max-width: 100px;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;*/
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert(49%) sepia(88%) saturate(380%) hue-rotate(206deg)
+    brightness(93%) contrast(91%);
 }
 
 .coaching-card h4 {
@@ -465,16 +486,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 18px;
+  margin-bottom: 15px;
   text-align: center;
   border: solid orange 0px;
 }
-
-/*.ill-container {
-  margin: 50px 0px;
-  text-align: center;
-  display: block;
-  border: solid green 10px;
-}*/
 
 /* ---- ABOUT ---- */
 
@@ -663,6 +678,12 @@ body {
     height: auto;
   }
 
+  .coaching-text {
+    justify-content: center;
+    margin: 10px;
+    border: solid indigo 0px;
+  }
+
   .img {
     max-width: 100%;
     height: auto;
@@ -779,6 +800,13 @@ body {
   .coaching-body {
     max-width: 100%;
     height: auto;
+  }
+
+  /* øverste section i coaching*/
+
+  .coaching-text {
+    justify-content: center;
+    border: solid #f8f8f8 10px;
   }
 
   .img {
