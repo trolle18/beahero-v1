@@ -147,7 +147,6 @@ body {
     margin-bottom: -5px;
 }
 
-
 .section-text a {
     text-decoration: none;
     color: #2f1f5d;
@@ -284,8 +283,6 @@ body {
     background-color: #2f1f5d;
 }
  
-
-
 
 
 /* ---- COACHING ---- */
@@ -525,6 +522,98 @@ body {
 
 
 /* ---- ABOUT ---- */
+.lillabox{
+    position: relative;
+    background: #c8c7ff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 5px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: left;
+}
+
+.billed-container {
+    margin: 50px 0px;
+    text-align: center;
+    display: block;
+}
+
+.billed-container a {
+    text-decoration: none;
+    color: #c8c7ff;
+    font-style: italic;
+    font-size: 8px;
+}
+
+/*----Timeline----*/
+.timeline {
+    position: center;
+    background: #c8c7ff;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    margin-bottom: 100px; 
+}
+
+.timeline li {
+    font-size: 50px;    
+}
+
+.wrapper { 
+    margin: 90px;
+    background-color: #c8c7ff;   
+}
+
+.box {
+    background-color: #c8c7ff;
+    padding: 10px 25px;
+    font-size: 18px;
+    border: 1px solid #c8c7ff;
+    position: relative;
+    height: 150px;
+    margin-bottom: 20px;
+    color: #000;
+    border-radius: 0 50px 0 50px;
+    }
+
+/* .box::before { 
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #c8c7ff;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+ } */
+
+.box::after {
+    content: '';
+    width: 0;
+    border: 0;
+    border-style: solid;
+    border-color: transparent #c8c7ff transparent transparent;
+    border-width:  8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.box h2 {
+    margin: 0;
+    font-family: "newsGoth BT", sans serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.box p {
+    margin: 0;
+    line-height: 1.8;
+}
 
 
 
@@ -812,7 +901,50 @@ button[type=submit]:hover {
 
 
     /* About */
+    .billed-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    .header-box {
+        height: 100px;
+        background-size: cover;
+        margin-bottom: 0px;
+        top: 0%;
+        width: 200%;
+    }
+    .flexbox {
+        position: relative;
+        background: #c8c7ff;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: left;
+    } 
 
+    .flexbox img {
+        max-width: 100px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        position: center;
+    }              
+
+    .about-tekst {
+        padding: 10px ;
+    }
+
+    .billed-container {
+        max-width: 100%;
+    }
+
+    .billed-container a {
+        text-decoration: none;
+        color: #c8c7ff;
+        font-style: italic;
+        font-size: 8px;
+    }
 
 
     /* Contact */
@@ -940,7 +1072,22 @@ button[type=submit]:hover {
 
     
     /* About */
+    .billed-container img {
+        max-width: 100%;
+        height: auto;
+    }
 
+    .flexbox {
+        max-width: 100%;
+        padding: 10px 10px;
+        display: flex;           
+    }
+
+    .flexbox img {
+        max-width: 50%;
+        padding: 10px 10px;
+        display: flex;            
+    }
 
     /* Contact */
     .shape-bg {
@@ -993,6 +1140,31 @@ button[type=submit]:hover {
     
     /* About */
 
+    .billed-container img {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-container {
+        right: 0;
+        left: 0;
+        height: 30%;
+        bottom: 0;
+    }
+    
+    .flexbox {
+        max-width: 100%;
+        padding: 10px 10px;
+        display: flex;            
+    }
+    
+    .flexbox img {
+            max-width: 50%;
+            padding: 10px 10px;
+            display: flex;            
+    }
 
     /* Contact */
     .shape-bg {
