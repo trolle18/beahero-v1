@@ -10,7 +10,7 @@ body {
 /* Header */
 .header-box {
     background-image: url(img/headerfoto.png);
-    height: 400px;
+    height: 500px;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +98,7 @@ body {
     position: absolute;
     text-align: center;
     color: #f8f8f8;
-    top: 50%;
+    top: 202px;
     width: 100%;
     border: solid green 0px;
 }
@@ -107,13 +107,15 @@ body {
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 36px;
 }
 
 .header-text h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
+
+
 
 /* ---- HOMEPAGE ---- */
 
@@ -127,11 +129,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 
 .section-text {
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin: 0px;
     width: 650px;  
     border: solid violet 0px;
@@ -142,6 +144,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
+    margin-bottom: -5px;
 }
 
 
@@ -176,6 +179,8 @@ body {
     text-transform: uppercase;
     font-size: 18px; 
     text-align: center;
+    margin-bottom: -5px;
+
 }
 
 .ill-container {
@@ -285,6 +290,238 @@ body {
 
 /* ---- COACHING ---- */
 
+.coaching-head {
+    color: #2f1f5d;
+  }
+  
+  .coaching-text {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*  text bokse med billeder i */
+  
+  /*
+  .section1 {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 20px 0 0;
+  }
+  
+  }
+  .benthe-img img {
+    height: 900px;
+    
+  }
+  
+  .benthe-div{
+    float: left;
+    
+  }
+  
+  .offers {
+    float: right;
+    
+  }
+  
+  .section2 {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 20px 0 0;
+  }
+  
+  }
+  .handshake {
+    padding: 15px;
+    
+  }
+  
+  .benthe-div{
+    float: left;
+    
+  }
+  
+  .offers {
+    float: right;
+  
+    
+  }*/
+  
+  .benthe-div {
+    max-width: 650px;
+    padding: 5px;
+    margin: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+
+  .benthe-img {
+    height: 250px;
+    float: left;
+  }
+
+  .offers {
+    padding: 20px 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+
+  .offers h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    text-align: center;
+  }
+
+  .offers li p {
+    margin-left: 0px;
+    display: block;
+  }
+  
+  .section2 {
+    max-width: 650px;
+    padding: 5px;
+    margin: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+  
+  .handshake {
+    margin-left: 10px;
+    height: 250px;
+    float: right;
+  }
+  
+  .text2 p {
+    margin-right: 0px;
+    display: block;
+  }
+  
+  .section3 {
+    max-width: 650px;
+    padding: 5px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+  
+  .flowers {
+    padding-right: 5px;
+    height: 250px;
+    float: left;
+  }
+  
+  .offers p {
+    margin-left: 500px;
+    display: block;
+  }
+  
+  /*  billede i midten  */
+  
+  .benthe-athens {
+      margin: 40px 0px;
+  }
+
+  .benthe-athens img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  
+  .athens-text {
+    text-align: center;
+    font-style: italic;
+    color: #887ee3;
+    font-size: 8px;
+  }
+  
+  /*   kort  */
+  
+  .coaching-column {
+    padding: 0 10px;
+    border: solid hotpink 0px;
+  }
+  
+  /* {
+    max-width: 767px;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+  
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid red 0px;
+  }*/
+  .coaching-row {
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid green 0px;
+    
+  }
+  .card-text {
+    justify-content: center;
+    margin: 0px;
+    border: solid indigo 0px;
+  }
+  
+  .card-text2 {
+    justify-content: center;
+    margin: 5px;
+    margin-bottom: 15px;
+    border: solid indigo 0px;
+  }
+  
+  .coaching-card {
+    background-color: #c8c7ff;
+    padding: 10px 5px;
+    margin: 5px;
+    max-width: 200px;
+    justify-content: center;
+    border: solid violet 0px;
+  }
+  
+  .card-img {
+    /*max-width: 100px;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;*/
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(49%) sepia(88%) saturate(380%) hue-rotate(206deg)
+      brightness(93%) contrast(91%);
+  }
+  
+  .coaching-card h4 {
+    font-family: "NewsGoth BT", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: solid orange 0px;
+  }
+  
 
 
 /* ---- ABOUT ---- */
@@ -375,7 +612,9 @@ button[type=submit]:hover {
     margin-bottom: 15px;
 }
 
-
+.shape-bg img {
+    opacity: 40%; 
+}
 
 
 
@@ -385,7 +624,7 @@ button[type=submit]:hover {
 .footer-container {
     width: 100%;
     background-color: #2f1f5d;
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 
 .footer-content {
@@ -407,7 +646,7 @@ button[type=submit]:hover {
     border: solid blue 0px;
     display: block;
     width: 100%;
-    margin: 0px 0px;
+    margin-bottom: 0px;
 }
 
 .footer-logo a {
@@ -427,7 +666,7 @@ button[type=submit]:hover {
     font-size: 14px;
     text-decoration: none;
     line-height: 30px;
-    margin: 20px 0px;
+    margin: 0px 0px;
 }
 
 .footer-links ul {
@@ -565,6 +804,11 @@ button[type=submit]:hover {
 
     /* Coaching */
 
+        .benthe-img {
+            float: none;
+            padding-left: auto;
+            padding-right: auto;
+        }
 
 
     /* About */
@@ -577,7 +821,6 @@ button[type=submit]:hover {
         z-index: -1;
         padding-top: 160px;
         margin-left: -120px;
-
     }
     
     .shape-bg img {
