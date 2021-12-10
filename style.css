@@ -112,7 +112,6 @@ body {
 .section-text {
     padding: 10px 0px;
     margin: 0px;
-    width: 650px;  
     border: solid violet 0px;
 }
 
@@ -146,6 +145,76 @@ body {
 }
 
 /*----Timeline----*/
+.some-container1 {
+    margin: 40px 40px;
+}
+.some-container1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.some-container1 ul:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    border: 1px solid #777;
+}
+
+.some-container1 ul li {
+    margin: 30px 60px;
+    position: relative;
+}
+
+.some-container1 ul li span {
+    content: '';
+    position: relative;
+    top: 0;
+    left: -60px;
+    width: 0px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.some-container1 ul li span:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    background: #000;
+}
+
+.some-container1 ul li span:before {
+    top: -10px;
+
+}
+
+.some-container1 ul li span:after {
+    top: 100%;
+}
+
+
+
+.some-container1 ul{
+    background-color: #887ee3;
+ }
+
+
+
+
+
+
+
+
+
+
+/* ------ */
 .timeline {
     position: center;
     background: #c8c7ff;
@@ -153,12 +222,16 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 10px 0px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
 }
 
-.wrapper {
+.timeline li {
+    font-size: 50px;    
+}
+
+.wrapper { 
     margin: 90px;
-    background-color: #c8c7ff;
+    background-color: #c8c7ff;   
 }
 
 .box {
@@ -173,18 +246,17 @@ body {
     border-radius: 0 50px 0 50px;
     }
 
-.box::before {
+/* .box::before { 
     content: '';
     display: block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #000;
     border: 3px solid #c8c7ff;
     position: absolute;
     top: 10px;
     left: -40px;
-}
+ } */
 
 .box::after {
     content: '';
@@ -207,8 +279,9 @@ body {
 
 .box p {
     margin: 0;
-    line-height: 1.8;;
+    line-height: 1.8;
 }
+
 /* ---- COACHING ---- */
 
 /* ---- ABOUT ---- */
@@ -315,16 +388,17 @@ input[type=submit]:hover {
 
 .footer-container {
     width: 100%;
-    border: solid red 1px;
+    border: solid red 0px;
     background-color: #2f1f5d;
     padding-top: 50px;
+
 }
 
 .footer-content {
     max-width: 900px;
     display: flex;
     flex-wrap: wrap;
-    border: solid red 1px;
+    border: solid red 0x;
     padding: 50px 0px;
     justify-content: space-between;
     margin-left: auto;
@@ -336,7 +410,7 @@ input[type=submit]:hover {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
-    border: solid blue 1px;
+    border: solid blue 0px;
     display: block;
     width: 100%;
     margin: 0px 0px;
@@ -354,7 +428,7 @@ input[type=submit]:hover {
 
 .footer-links {
     width: 200px;  
-    border: solid violet 1px;
+    border: solid violet 0px;
     color: #f8f8f8;
     font-size: 14px;
     text-decoration: none;
@@ -430,7 +504,7 @@ input[type=submit]:hover {
         .nav-links {
             display: none;
         }
-
+ 
     /* Mobile menu */
         .dropbtn {
             color: #f8f8f8;
@@ -482,7 +556,7 @@ input[type=submit]:hover {
     /* Coaching */
 
     /* About */
-
+    
   .billed-container img {
             max-width: 100%;
             height: auto;
@@ -510,24 +584,31 @@ input[type=submit]:hover {
     height: auto;
     margin-top: 10px;
     margin-bottom: 15px;
+    position: center;
 
 }              
 .about-tekst {
     padding: 10px ;
 }
+
+.billed-container {
+    max-width: 100%;
+    
 }
+
+.billed-container a {
+    text-decoration: none;
+    color: #c8c7ff;
+    font-style: italic;
+    font-size: 8px;
+}
+
     /* Contact */
 
     /* Footer */
-    .footer-container {
-            right: 0;
-            left: 0;
-            height: 30%;
-            bottom: 0;
-        }
-        
+    
         .footer-container {
-            width: 100%;
+            width: 200%;
             background-color: #2f1f5d;
             padding: 50px 0px;
         }
@@ -555,6 +636,8 @@ input[type=submit]:hover {
     padding: 0px;
     width: 50%;
 }
+}
+
 /* -- TABLET -- */
 @media screen and (min-width:768px) and (max-width:1023px) {
     
