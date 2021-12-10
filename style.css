@@ -447,7 +447,7 @@ body {
   /*   kort  */
   
   .coaching-column {
-    padding: 0 10px;
+    padding: 10px 5px;
     border: solid hotpink 0px;
   }
   
@@ -489,7 +489,7 @@ body {
   
   .coaching-card {
     background-color: #c8c7ff;
-    padding: 10px 5px;
+    padding: 20px 5px;
     margin: 5px;
     max-width: 200px;
     justify-content: center;
@@ -525,13 +525,18 @@ body {
 .lillabox{
     position: relative;
     background: #c8c7ff;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 5px;
-    margin-bottom: 100px;
+    max-width: 100%;
+    padding:  5px;
     display: flex;
-    justify-content: left;
+}
+
+.about-tekst h3 {
+    font-family: "NewsGoth BT", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .billed-container {
@@ -547,7 +552,7 @@ body {
     font-size: 8px;
 }
 
-/*----Timeline----*/
+/* Timeline */
 .timeline {
     position: center;
     background: #c8c7ff;
@@ -899,40 +904,44 @@ button[type=submit]:hover {
             padding-right: auto;
         }
 
+        .benthe-athens {
+            width: 100%;
+            margin: 10px 0px;
+            justify-content: center;
+        }
+        
+        .benthe-athens img {
+            width: 210px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
 
     /* About */
     .billed-container img {
         max-width: 100%;
         height: auto;
     }
-    .header-box {
-        height: 100px;
-        background-size: cover;
-        margin-bottom: 0px;
-        top: 0%;
-        width: 200%;
-    }
+
     .flexbox {
         position: relative;
         background: #c8c7ff;
-        max-width: 100px;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 100px;
-        display: flex;
-        justify-content: left;
+        margin-bottom: 0px;
+        justify-content: center;
+        display: block;
     } 
 
     .flexbox img {
-        max-width: 100px;
+        width: 100%;
         height: auto;
-        margin-top: 10px;
-        margin-bottom: 15px;
         position: center;
     }              
 
     .about-tekst {
-        padding: 10px ;
+        padding: 5px ;
     }
 
     .billed-container {
@@ -994,7 +1003,7 @@ button[type=submit]:hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding: 0px;
+        margin-top: 20px;
         width: 50%;
     }
 
@@ -1073,21 +1082,30 @@ button[type=submit]:hover {
     
     /* About */
     .billed-container img {
-        max-width: 100%;
+        max-width: 650px;
         height: auto;
+    }
+
+
+    .lillabox {
+        padding: 5px;
     }
 
     .flexbox {
         max-width: 100%;
-        padding: 10px 10px;
+        padding: 5px 5px;
         display: flex;           
     }
 
     .flexbox img {
-        max-width: 50%;
-        padding: 10px 10px;
-        display: flex;            
+        max-width: 250px;
+        margin-right: 10px;          
     }
+
+    .about-tekst {
+        justify-content: center;
+        margin-top: 20px;
+        }
 
     /* Contact */
     .shape-bg {
@@ -1142,30 +1160,33 @@ button[type=submit]:hover {
 
     .billed-container img {
         display: block;
-        width: 90%;
+        max-width: 800px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .footer-container {
-        right: 0;
-        left: 0;
-        height: 30%;
-        bottom: 0;
-    }
-    
-    .flexbox {
-        max-width: 100%;
-        padding: 10px 10px;
-        display: flex;            
-    }
-    
-    .flexbox img {
-            max-width: 50%;
-            padding: 10px 10px;
-            display: flex;            
+    .lillabox {
+        margin-left: 340px;
+        max-width: 650px;
+        display: block;
     }
 
+    .flexbox {
+        max-width: 100%;
+        padding: 5px 5px;
+        display: flex;           
+    }
+
+    .flexbox img {
+        max-width: 200px;
+        margin-right: 10px;          
+    }
+
+    .about-tekst {
+        justify-content: center;
+        margin-top: 20px;
+        }
+    
     /* Contact */
     .shape-bg {
         position: absolute;
