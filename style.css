@@ -861,7 +861,7 @@ button[type=submit]:hover {
       
         .dropdown-content {
             display: none;
-            background-color: #c8c7ff40;
+            background-color: #2f1f5dba;
             position: absolute;
             min-width: 120px;
             padding: 10px 0px;
@@ -1039,7 +1039,7 @@ button[type=submit]:hover {
       
         .dropdown-content {
             display: none;
-            background-color: #c8c7ff40;
+            background-color: #2f1f5dba;
             position: absolute;
             min-width: 120px;
             padding: 10px 0px;
