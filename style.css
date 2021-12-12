@@ -594,14 +594,12 @@ body {
 }
 
 .timeline li {
-    font-size: 26px;
     margin-bottom: 20px;
     padding-bottom: 5px;
     background: #c8c7ff;
 }
 
 .timeline li::marker {
-    font-size: 26px;
     color: #2f1f5d;    
 }
 
@@ -613,7 +611,7 @@ body {
 .box {
     background-color: #c8c7ff;
     padding: 0px 15px;
-    font-size: 18px;
+    font-size: 14px;
     border: 2px solid #c8c7ff;
     position: relative;
     /* height: 100px; */
@@ -649,7 +647,7 @@ body {
 .box h2 {
     margin-top: 8px;
     font-family: "NewsGoth BT", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 3px;
 }
 
