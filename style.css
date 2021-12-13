@@ -10,7 +10,7 @@ body {
 /* Header */
 .header-box {
     background-image: url(img/headerfoto.png);
-    height: 400px;
+    height: 500px;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +98,7 @@ body {
     position: absolute;
     text-align: center;
     color: #f8f8f8;
-    top: 50%;
+    top: 202px;
     width: 100%;
     border: solid green 0px;
 }
@@ -107,13 +107,16 @@ body {
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 36px;
 }
 
 .header-text h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: normal;
 }
+
+
 
 /* ---- HOMEPAGE ---- */
 
@@ -127,11 +130,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 
 .section-text {
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin: 0px;
     width: 650px;  
     border: solid violet 0px;
@@ -142,8 +145,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
+    margin-bottom: -5px;
 }
-
 
 .section-text a {
     text-decoration: none;
@@ -164,9 +167,9 @@ body {
 
 .card {
     background-color: #c8c7ff;
-    padding: 5px;
+    padding: 15px;
     margin: 5px;
-    width: 200px;  
+    width: 195px;  
     border: solid violet 0px;
 }
 
@@ -176,6 +179,8 @@ body {
     text-transform: uppercase;
     font-size: 18px; 
     text-align: center;
+    margin-bottom: -5px;
+
 }
 
 .ill-container {
@@ -196,9 +201,8 @@ body {
     position: relative;
     background: #c8c7ff;
     max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0px;
+    margin: 0 auto;
+    padding: 15px;
     margin-bottom: 100px;
 }
 
@@ -207,13 +211,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
-    margin: 0px 15px;
+    margin-top: 10px;
 }
 
 .slides-container {
     background: #c8c7ff;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .slide {
@@ -222,18 +225,27 @@ body {
     text-align: center;
 }
 
-.slide q {
-    font-style: italic;
+ .slide q {
+    font-weight: normal;
+}
+
+.author-text {
+    margin-top: 25px;
+    color: #2f1f5d;
+    font-family: 'NewsGoth BT', sans-serif;
 }
 
 .author {
-    color: #2f1f5d;
-    font-family: 'NewsGoth BT', sans-serif;
-    font-size: 12px;
+    margin: 0px;
+    font-weight: bold;
 }
 
-  
-  /* Buttons */
+.author-role {
+    font-size: 12px;
+    margin: 0px;
+}
+
+/* Buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -250,6 +262,11 @@ body {
 .next {
     position: absolute;
     right: 0;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
 }
   
 .prev:hover, .next:hover {
@@ -281,13 +298,377 @@ body {
  
 
 
-
-
 /* ---- COACHING ---- */
 
+.coaching-head {
+    color: #2f1f5d;
+  }
+  
+  .coaching-text {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*  text bokse med billeder i */
+  
+  /*
+  .section1 {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 20px 0 0;
+  }
+  
+  }
+  .benthe-img img {
+    height: 900px;
+    
+  }
+  
+  .benthe-div{
+    float: left;
+    
+  }
+  
+  .offers {
+    float: right;
+    
+  }
+  
+  .section2 {
+    max-width: 767px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 20px 0 0;
+  }
+  
+  }
+  .handshake {
+    padding: 15px;
+    
+  }
+  
+  .benthe-div{
+    float: left;
+    
+  }
+  
+  .offers {
+    float: right;
+  
+    
+  }*/
+  
+  .benthe-div {
+    max-width: 650px;
+    padding: 15px;
+    margin: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+
+  .benthe-img {
+    height: 250px;
+    float: left;
+  }
+
+  .offers {
+    padding: 20px 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+
+  .offers h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    text-align: center;
+  }
+
+  .offers li p {
+    margin-left: 0px;
+    display: block;
+  }
+  
+  .section2 {
+    max-width: 650px;
+    padding: 15px;
+    margin: 0px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+  
+  .handshake {
+    margin-left: 15px;
+    height: 250px;
+    float: right;
+  }
+  
+  .text2 p {
+    margin-right: 0px;
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .section3 {
+    max-width: 650px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+  
+  .flowers {
+    margin-right: 15px;
+    height: 250px;
+    float: left;
+  }
+  
+  .offers p {
+    margin-left: 500px;
+    display: block;
+  }
+  
+  /*  billede i midten  */
+  
+  .benthe-athens {
+      margin: 40px 0px;
+  }
+
+  .benthe-athens img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  
+  .athens-text {
+    text-align: center;
+    font-style: italic;
+    color: #887ee3;
+    font-size: 8px;
+  }
+  
+  /*   kort  */
+  
+  .coaching-column {
+    padding: 10px 5px;
+    border: solid hotpink 0px;
+  }
+  
+  /* {
+    max-width: 767px;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c8c7ff;
+  }
+  
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid red 0px;
+  }*/
+  .coaching-row {
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid green 0px;
+    
+  }
+  .card-text {
+    justify-content: center;
+    margin: 0px;
+    border: solid indigo 0px;
+  }
+  
+  .card-text2 {
+    justify-content: center;
+    margin: 5px;
+    margin-bottom: 15px;
+    border: solid indigo 0px;
+  }
+  
+  .coaching-card {
+    background-color: #c8c7ff;
+    padding: 20px 15px;
+    margin: 5px;
+    max-width: 200px;
+    justify-content: center;
+    border: solid violet 0px;
+  }
+  
+  .card-img {
+    /*max-width: 100px;
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;*/
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(49%) sepia(88%) saturate(380%) hue-rotate(206deg)
+      brightness(93%) contrast(91%);
+  }
+  
+  .coaching-card h4 {
+    font-family: "NewsGoth BT", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: solid orange 0px;
+  }
+  
 
 
 /* ---- ABOUT ---- */
+.lillabox{
+    position: relative;
+    background: #c8c7ff;
+    max-width: 650px;
+    padding:  5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-tekst h3 {
+    font-family: "NewsGoth BT", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.billed-container {
+    margin: 50px 0px;
+    text-align: center;
+    display: block;
+}
+
+.billed-container a {
+    text-decoration: none;
+    color: #c8c7ff;
+    font-style: italic;
+    font-size: 8px;
+}
+
+/* Timeline */
+.timeline {
+    position: center;
+    /* background: #c8c7ff; */
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    padding-left: 10px;
+
+}
+
+.timeline-tekst h3 {
+    font-family: "NewsGoth BT", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    max-width: 650px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.timeline li {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    background: #c8c7ff;
+}
+
+.timeline li::marker {
+    color: #2f1f5d;    
+}
+
+.wrapper { 
+    margin: 90px;
+    background-color: #c8c7ff;   
+}
+
+.box {
+    background-color: #c8c7ff;
+    padding: 0px 15px 15px 15px;
+    font-size: 14px;
+    border: 2px solid #c8c7ff;
+    position: relative;
+    /* height: 100px; */
+    /* margin-bottom: 15px; */
+    color: #000;
+    /* border-radius: 0 50px 0 50px; */
+    }
+
+/* .box::before { 
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #c8c7ff;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+ } */
+
+.box::after {
+    content: '';
+    width: 0;
+    border: 0;
+    border-style: solid;
+    border-color: transparent #c8c7ff transparent transparent;
+    border-width:  8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.box h2 {
+    margin-top: 8px;
+    font-family: "NewsGoth BT", sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.box p {
+    margin: px 0px 10px 0px;
+}
+
+.timelinecont {
+    margin-bottom: 100px;
+}
+
+.fade-scale-in {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.fade-scale-in.transition {
+    transition: all 0.6s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 
@@ -375,7 +756,9 @@ button[type=submit]:hover {
     margin-bottom: 15px;
 }
 
-
+.shape-bg img {
+    opacity: 40%; 
+}
 
 
 
@@ -385,7 +768,7 @@ button[type=submit]:hover {
 .footer-container {
     width: 100%;
     background-color: #2f1f5d;
-    padding: 50px 0px;
+    padding: 10px 0px;
 }
 
 .footer-content {
@@ -407,7 +790,7 @@ button[type=submit]:hover {
     border: solid blue 0px;
     display: block;
     width: 100%;
-    margin: 0px 0px;
+    margin-bottom: 0px;
 }
 
 .footer-logo a {
@@ -427,7 +810,7 @@ button[type=submit]:hover {
     font-size: 14px;
     text-decoration: none;
     line-height: 30px;
-    margin: 20px 0px;
+    margin: 0px 0px;
 }
 
 .footer-links ul {
@@ -533,7 +916,7 @@ button[type=submit]:hover {
       
         .dropdown-content {
             display: none;
-            background-color: #c8c7ff40;
+            background-color: #2f1f5dba;
             position: absolute;
             min-width: 120px;
             padding: 10px 0px;
@@ -565,10 +948,79 @@ button[type=submit]:hover {
 
     /* Coaching */
 
+        .benthe-img {
+            float: none;
+            width: 100%;
+        }
+
+        .handshake {
+            float: none;
+            margin-left: 0px;
+            padding: 0px;
+            width: 100%;
+        }
+
+        .flowers {
+            float: none;
+            width: 100%;
+        }
+
+        .benthe-athens {
+            width: 100%;
+            margin: 10px 0px;
+            justify-content: center;
+        }
+        
+        .benthe-athens img {
+            width: 210px;
+            margin-right: auto;
+            margin-left: auto;
+        }
 
 
     /* About */
+    .billed-container img {
+        max-width: 100%;
+        height: auto;
+    }
 
+    .flexbox {
+        position: relative;
+        background: #c8c7ff;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        justify-content: center;
+        display: block;
+    } 
+
+    .flexbox img {
+        width: 100%;
+        height: auto;
+        position: center;
+    }              
+
+    .about-tekst {
+        padding: 5px ;
+    }
+
+    .billed-container {
+        max-width: 100%;
+        margin: 30px 0px;
+
+    }
+
+    .billed-container a {
+        text-decoration: none;
+        color: #c8c7ff;
+        font-style: italic;
+        font-size: 8px;
+    }
+
+    .timelinecont {
+        padding-top: 20px;
+    }
 
 
     /* Contact */
@@ -577,7 +1029,6 @@ button[type=submit]:hover {
         z-index: -1;
         padding-top: 160px;
         margin-left: -120px;
-
     }
     
     .shape-bg img {
@@ -619,7 +1070,7 @@ button[type=submit]:hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding: 0px;
+        margin-top: 20px;
         width: 50%;
     }
 
@@ -664,7 +1115,7 @@ button[type=submit]:hover {
       
         .dropdown-content {
             display: none;
-            background-color: #c8c7ff40;
+            background-color: #2f1f5dba;
             position: absolute;
             min-width: 120px;
             padding: 10px 0px;
@@ -697,7 +1148,31 @@ button[type=submit]:hover {
 
     
     /* About */
+    .billed-container img {
+        max-width: 650px;
+        height: auto;
+    }
 
+
+    .lillabox {
+        padding: 5px;
+    }
+
+    .flexbox {
+        max-width: 100%;
+        padding: 5px 5px;
+        display: flex;           
+    }
+
+    .flexbox img {
+        max-width: 250px;
+        margin-right: 10px;          
+    }
+
+    .about-tekst {
+        justify-content: center;
+        margin-top: 20px;
+        }
 
     /* Contact */
     .shape-bg {
@@ -750,7 +1225,34 @@ button[type=submit]:hover {
     
     /* About */
 
+    .billed-container img {
+        display: block;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .lillabox {
+        max-width: 650px;
+        display: block;
+    }
+
+    .flexbox {
+        max-width: 100%;
+        padding: 5px 5px;
+        display: flex;           
+    }
+
+    .flexbox img {
+        max-width: 200px;
+        margin-right: 10px;          
+    }
+
+    .about-tekst {
+        justify-content: center;
+        margin-top: 20px;
+        }
+    
     /* Contact */
     .shape-bg {
         position: absolute;

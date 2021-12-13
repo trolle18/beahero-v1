@@ -8,7 +8,6 @@
   
     /* Close  dropdown if clicked outside */
     window.onclick = function(event) {
-      console.log(event);
       if (!event.target.matches('.fa')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
@@ -51,4 +50,32 @@
 
 
 
-/*---- CONTACT ----*/
+/*---- ABOUT ----*/
+
+/* Timeline */
+  function handler(entries) {
+    for (const entry of entries) {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("transition");
+      } else {
+        entry.target.classList.remove("transition");        
+      }
+    }
+  }
+
+  const observer = new
+  IntersectionObserver(handler, {
+    threshold: 0.3,
+  });
+
+  const timelineElements =
+  document.querySelectorAll(".timeline li");
+  
+
+  for (const element of timelineElements) {
+    element.classList.add("fade-scale-in");
+    observer.observe(element);
+  }
+
+
